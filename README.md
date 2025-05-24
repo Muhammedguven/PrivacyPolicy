@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Privacy Policy - Omnitrix Simulator</title>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
+    <h1>Privacy Policy - Omnitrix Simulator</h1>
 
     <p>Last updated: May 24, 2025</p>
 
