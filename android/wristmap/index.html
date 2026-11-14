@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Privacy Policy - MiniMap Radar (WristMap)</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 2rem;
+          background-color: #f9f9f9;
+          color: #333;
+          max-width: 860px;
+        }
+        h1, h2 {
+          color: #1a73e8;
+        }
+        a {
+          color: #1a73e8;
+          text-decoration: none;
+        }
+        ul {
+          padding-left: 1.4rem;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+
+<p><strong>Last updated:</strong> November 14, 2026</p>
+<p><strong>App Name:</strong> MiniMap Radar (WristMap)</p>
+<p><strong>Package name:</strong> com.kolapps.wristmapmini</p>
+<p><strong>Developer:</strong> Kolapps</p>
+<p><strong>Contact:</strong> <a href="mailto:mguvenn96@gmail.com">mguvenn96@gmail.com</a></p>
+
+<h2>1. Introduction</h2>
+<p>
+    This Privacy Policy explains how <strong>MiniMap Radar</strong> (also known as <strong>WristMap</strong>),
+    developed and published by Kolapps (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;), handles information when you use our
+    Android phone application and Wear OS smartwatch application (package ID: <code>com.kolapps.wristmapmini</code>).
+</p>
+<p>
+    MiniMap Radar (WristMap) is an offline-capable radar map and pedestrian walking navigation app for Android phones and Wear OS smartwatches.
+    It is designed so that your live navigation, saved places, and walking history remain on your own devices.
+</p>
+<p>
+    Google Play Store page:
+    <a href="https://play.google.com/store/apps/details?id=com.kolapps.wristmapmini" target="_blank" rel="noopener noreferrer">
+        https://play.google.com/store/apps/details?id=com.kolapps.wristmapmini
+    </a>
+</p>
+
+<h2>2. Personal Data &amp; Account Registration</h2>
+<p>
+    We do <strong>not</strong> require account registration, login, or user profiles. We do not ask for or collect your name,
+    email address, phone number, or payment details inside the app, and we do not integrate third-party advertising or marketing tracker SDKs.
+</p>
+
+<h2>3. Information Processed &amp; Device Permissions</h2>
+<p>
+    To provide core navigation, offline map setup, and camera HUD features, the app requests and processes the following permissions and data strictly for app functionality:
+</p>
+<ul>
+    <li>
+        <strong>Location Data (Approximate &amp; Precise Location — <code>ACCESS_COARSE_LOCATION</code>, <code>ACCESS_FINE_LOCATION</code>, and <code>FOREGROUND_SERVICE_LOCATION</code>):</strong>
+        <ul>
+            <li><strong>On-Device Navigation:</strong> Your location is used locally on your phone or Wear OS watch to show your position on the radar map, calculate offline walking routes, track turn-by-turn progress during an active walk (via a foreground location service while a walk is in progress), and record completed walk distance and duration in your local Walk History.</li>
+            <li><strong>Offline Map Package Selection:</strong> During initial map setup or when updating your local area map, the app uses your location to determine which regional offline map package covers your area from our static HTTPS map catalog, or sends a rounded coordinate center to our map preparation service solely to resolve and download the corresponding offline map archive. We do not store, profile, or track your location history on our servers.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Camera &amp; Screen Capture (<code>CAMERA</code> and <code>FOREGROUND_SERVICE_MEDIA_PROJECTION</code>):</strong>
+        <ul>
+            <li><strong>Camera HUD Mode:</strong> On the phone app, enabling Camera mode displays a live camera viewfinder behind the radar HUD so you can see the street ahead along with your mini-map and next turn. Camera frames are rendered live on your screen and are never uploaded to any server.</li>
+            <li><strong>Walk Video Recording:</strong> If you explicitly tap the Record button in Camera mode and grant system screen-capture consent, the app records the app window (camera preview + radar HUD overlay) into an MP4 video file saved locally on your device (in your device&apos;s <code>Movies/WristMap</code> media folder or app storage). Video files remain on your device unless you choose to share them using Android&apos;s system share sheet.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Saved Places, Walk History, and Preferences (Local Storage):</strong>
+        Saved pins/favorites (including custom labels such as Home, Work, or School), recent place searches, completed walk records (distance, duration, start/end timestamps, destination name), and app preferences (language, distance units, map orientation, vibration, and sound settings) are stored locally on your device. Android system cloud auto-backup is disabled (<code>allowBackup=&quot;false&quot;</code>) so your local navigation data stays on your device.
+    </li>
+    <li>
+        <strong>Notifications &amp; Vibration (<code>POST_NOTIFICATIONS</code>, <code>VIBRATE</code>):</strong>
+        Used to display ongoing walking navigation status, offline map download progress, active video recording controls, and optional haptic turn alerts on your phone or watch.
+    </li>
+</ul>
+
+<h2>4. Wear OS Companion Sync</h2>
+<p>
+    When you send an installed offline map package from your Android phone to your paired Wear OS smartwatch, the transfer occurs directly between your paired devices using Google Play Services Wearable Data Layer / Channel APIs over Bluetooth or local connection. No personal data is transmitted to Kolapps during watch synchronization.
+</p>
+
+<h2>5. Network Requests &amp; Third-Party Services</h2>
+<p>
+    Once an offline map package is installed, map rendering, place search, and pedestrian route calculation run locally on your device without requiring an internet connection.
+    Network access (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>) is used only for:
+</p>
+<ul>
+    <li>Downloading offline map catalogs and regional map packages over HTTPS (hosted on Cloudflare R2 / our map distribution infrastructure). Standard technical request metadata (such as IP address and HTTP user agent) is processed by the hosting provider as part of normal file delivery;</li>
+    <li>Google Play Services (Location and Wearable APIs) for device location fixes and phone-to-watch map transfers.</li>
+</ul>
+<p>
+    Map and point-of-interest data included in offline packages are derived from OpenStreetMap (© OpenStreetMap contributors, available under the Open Database License — ODbL).
+</p>
+
+<h2>6. Data Sharing</h2>
+<p>
+    We do not sell, rent, or trade your personal information. Your location, saved places, walk history, and recorded videos are never shared with third parties by the app unless you explicitly initiate a share action (for example, sharing your coordinates or a recorded video via the Android share sheet).
+</p>
+
+<h2>7. Data Retention &amp; Your Choices</h2>
+<ul>
+    <li>You can delete individual saved places, clear your entire walk history, or remove downloaded offline maps at any time directly inside the app.</li>
+    <li>You can delete recorded walk videos from your device&apos;s gallery/media storage at any time.</li>
+    <li>You can revoke Location, Camera, or Notification permissions at any time in your Android or Wear OS system settings.</li>
+    <li>Uninstalling the app removes all app-private databases, saved places, walk history, and downloaded maps stored on that device.</li>
+</ul>
+
+<h2>8. Security</h2>
+<p>
+    All offline map downloads use HTTPS and are verified using SHA-256 cryptographic checksums before installation. Local app data is protected by Android and Wear OS application sandboxing.
+</p>
+
+<h2>9. Children&apos;s Privacy</h2>
+<p>
+    MiniMap Radar (WristMap) is not directed to children under the age of 13, and we do not knowingly collect personal information from children under 13.
+</p>
+
+<h2>10. Changes to This Privacy Policy</h2>
+<p>
+    We may update this Privacy Policy from time to time. When we do, we will revise the &quot;Last updated&quot; date at the top of this page. Continued use of the app after changes become effective constitutes acceptance of the updated policy.
+</p>
+
+<h2>11. Contact Us</h2>
+<p>
+    If you have any questions or concerns about this Privacy Policy or MiniMap Radar (WristMap), please contact us at:
+</p>
+<p>
+    <strong>Kolapps</strong><br />
+    Email: <a href="mailto:mguvenn96@gmail.com">mguvenn96@gmail.com</a>
+</p>
+
+</body>
+</html>
